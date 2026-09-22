@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050609">
+  <title>LAST TRAIN — One Last Journey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="grain"></div>
+
+  <!-- LANDING -->
+  <section id="landing" class="landing">
+
+    <div class="moon"></div>
+
+    <div class="landing-content">
+      <p class="time-label">11:47 PM</p>
+
+      <h1>
+        LAST<br>
+        <span>TRAIN</span>
+      </h1>
+
+      <p class="tagline">ONE LAST JOURNEY.</p>
+
+      <button id="enterBtn">
+        ENTER TRAIN
+        <span>→</span>
+      </button>
+    </div>
+
+    <div class="platform">
+      PLATFORM 04 · LAST DEPARTURE
+    </div>
+
+  </section>
+
+
+  <!-- TRAIN EXPERIENCE -->
+  <section id="train" class="train hidden">
+
+    <div class="sky"></div>
+
+    <div class="moon-small"></div>
+
+    <div id="cityLights" class="city-lights"></div>
+
+    <div class="land"></div>
+
+
+    <!-- TRAIN WINDOW -->
+
+    <div class="window">
+
+      <div class="window-glass">
+
+        <div class="scenery">
+
+          <div class="building building-one"></div>
+          <div class="building building-two"></div>
+
+          <div class="tree tree-one"></div>
+          <div class="tree tree-two"></div>
+
+          <div class="electric-pole"></div>
+
+        </div>
+
+        <div id="rain" class="rain"></div>
+
+        <div class="window-reflection"></div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CABIN -->
+
+    <div class="cabin">
+
+      <div id="lamp" class="lamp"></div>
+
+      <div class="seat"></div>
+
+      <div class="table"></div>
+
+    </div>
+
+
+    <!-- TOP UI -->
+
+    <header class="topbar">
+
+      <div>
+
+        <div class="logo">
+          LAST TRAIN
+        </div>
+
+        <div id="clock" class="clock">
+          11:47 PM
+        </div>
+
+      </div>
+
+      <button id="lightBtn" class="round-button">
+        ☼
+      </button>
+
+    </header>
+
+
+    <!-- JOURNEY INFO -->
+
+    <div class="journey-info">
+
+      <div id="journeyTime">
+        00:00
+      </div>
+
+      <div id="status">
+        DEPARTING...
+      </div>
+
+    </div>
+
+
+    <!-- CONTROLS -->
+
+    <div class="controls">
+
+      <button id="playBtn" class="play">
+        Ⅱ
+      </button>
+
+      <div class="mixer">
+
+        <label>
+          TRAIN
+          <input id="trainVolume"
+                 type="range"
+                 min="0"
+                 max="100"
+                 value="65">
+        </label>
+
+        <label>
+          RAIN
+          <input id="rainVolume"
+                 type="range"
+                 min="0"
+                 max="100"
+                 value="55">
+        </label>
+
+        <label>
+          WIND
+          <input id="windVolume"
+                 type="range"
+                 min="0"
+                 max="100"
+                 value="25">
+        </label>
+
+      </div>
+
+
+      <div class="timers">
+
+        <button data-minutes="30">30M</button>
+        <button data-minutes="60">60M</button>
+        <button data-minutes="90">90M</button>
+
+      </div>
+
+    </div>
+
+
+    <!-- SLEEP TIMER -->
+
+    <div id="sleepTimer" class="sleep-timer hidden">
+      SLEEP MODE · 30:00
+    </div>
+
+
+    <!-- RANDOM EVENT -->
+
+    <div id="eventMessage" class="event-message hidden"></div>
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
